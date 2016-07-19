@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.second.Fragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+<com.amap.api.maps.MapView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/map">
+
+</com.amap.api.maps.MapView>
+    <EditText
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:id="@+id/search"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/input_shape"
+
+        />
+
+    <ImageButton
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:id="@+id/show"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="11dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locate"
+        android:layout_gravity="right|center_vertical"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gothere"
+        android:layout_gravity="left|center_vertical" />
+
+</FrameLayout>

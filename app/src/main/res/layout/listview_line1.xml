@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:orientation="vertical"
+    android:background="#d7d3d3">
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.04"
+    android:orientation="horizontal"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="127dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/imageView"
+            android:background="#bebcbc"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="45dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="0dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/title"
+            android:textSize="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical|left"
+            android:textColor="#0b0a0a" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.10"
+            android:weightSum="1">
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ratingBar"
+                android:isIndicator="true"
+                android:clickable="false"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ratingNum"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.72"
+                android:textSize="15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textColor="#fb6e47" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/info"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="29dp"
+            android:gravity="center_vertical|left"
+            android:textColor="#777777" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#ded9d9"></LinearLayout>
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/benefit1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/benefit2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="6dp"/>
+        
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

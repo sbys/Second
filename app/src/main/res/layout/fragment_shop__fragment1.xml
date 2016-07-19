@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.second.Shop_Fragment1"
+    >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:weightSum="1">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:id="@+id/listview1_container"
+           android:orientation="horizontal"
+           android:layout_alignParentLeft="true"
+           android:layout_toLeftOf="@+id/listview2_container">
+           <android.support.v7.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/recyclerview_left">
+
+           </android.support.v7.widget.RecyclerView>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="240dp"
+           android:layout_height="match_parent"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentBottom="true"
+           android:id="@+id/listview2_container"
+           android:orientation="vertical"
+           android:background="#a0a0a0">
+           <android.support.v7.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/recyclerview_right">
+
+           </android.support.v7.widget.RecyclerView>
+       </LinearLayout>
+   </RelativeLayout>
+
+
+</FrameLayout>
